@@ -12,8 +12,8 @@ function TextForm(props){
         let newText='';
         setText(newText);
     }
-    const handleSpace = ()=>{
-        let newText=text.split(" ").join("");
+    const handleExtraSpace = ()=>{
+        let newText=text.replace(/\s+/g,' ');
         setText(newText);
     }
 
@@ -30,7 +30,7 @@ function TextForm(props){
             <button className='btn btn-primary mx-1' onClick={handleUp}>Convert to Upper</button>
             <button className='btn btn-primary mx-1' onClick={handleLo}>Convert to Lower</button>
             <button className='btn btn-primary mx-1' onClick={handleClear}>Clear Text</button>
-            <button className='btn btn-primary mx-1' onClick={handleSpace}>Remove spaces</button>
+            <button className='btn btn-primary mx-1' onClick={handleExtraSpace}>Remove Extra spaces</button>
 
             <div className="container my-5">
                 <h1>Your Text summary</h1>
