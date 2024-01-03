@@ -25,7 +25,7 @@ function TextForm(props){
         <>
             <h1 style={{color:props.mode==='white'?'dark':'white'}}>{props.heading}</h1>
             <div className="mb-3" style={{backgroundColor:props.mode==='dark'?'grey ':'white'}}>
-                <textarea className="form-control" onChange={handleOnChange} style={{backgroundColor:props.mode==='dark'?'grey ':'white' , color:props.mode==='white'?'dark':'white'}} placeholder='Enter your Text for conversion' value={text} id="box" rows="8"></textarea>
+                <textarea className="form-control" onChange={handleOnChange} style={{backgroundColor:props.mode==='dark'?'grey ':'white' , color:props.mode==='white'?'dark':'white'}} value={text} id="box" rows="8"></textarea>
             </div>
             <button className='btn btn-primary mx-1' onClick={handleUp}>Convert to Upper</button>
             <button className='btn btn-primary mx-1' onClick={handleLo}>Convert to Lower</button>
